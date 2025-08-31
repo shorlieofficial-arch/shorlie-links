@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shorlie — Links</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at center, #000000 60%, #111 100%);
+      color: white;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .avatar {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 40px auto 30px;
+      position: relative;
+      animation: pulseGlow 4s infinite ease-in-out;
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.08),
+                    0 0 120px 40px rgba(255, 255, 255, 0.05);
+      }
+      50% {
+        box-shadow: 0 0 80px 25px rgba(255, 255, 255, 0.15),
+                    0 0 150px 50px rgba(255, 255, 255, 0.08);
+      }
+      100% {
+        box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.08),
+                    0 0 120px 40px rgba(255, 255, 255, 0.05);
+      }
+    }
+    h1 {
+      margin: 10px 0 30px;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      margin: 12px auto;
+      padding: 14px;
+      border-radius: 12px;
+      transition: 0.3s;
+      font-size: 18px;
+      max-width: 350px;
+    }
+    .link-btn svg {
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+      fill: white;
+    }
+    .link-btn.yandex:hover {
+      background: #ffcc00;
+      box-shadow: 0 0 20px #ffcc00;
+      color: #000;
+    }
+    .link-btn.vk:hover {
+      background: #4680c2;
+      box-shadow: 0 0 20px #4680c2;
+    }
+    .link-btn.wink:hover {
+      background: #ff4b2b;
+      box-shadow: 0 0 20px #ff4b2b;
+    }
+    .link-btn.mts:hover {
+      background: #e60000;
+      box-shadow: 0 0 20px #e60000;
+    }
+    .link-btn.sber:hover {
+      background: #21a038;
+      box-shadow: 0 0 20px #21a038;
+    }
+    .link-btn.tg:hover {
+      background: #0088cc;
+      box-shadow: 0 0 20px #0088cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar">
+      <img src="cover.jpg.JPG" alt="Shorlie">
+    </div>
+    <h1>Shorlie</h1>
+
+    <a class="link-btn yandex" href="https://music.yandex.ru/artist/24651823?utm_medium=copy_link" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 2L4 6v12l8 4 8-4V6z"/></svg>
+      Яндекс Музыка
+    </a>
+
+    <a class="link-btn vk" href="https://trk.mail.ru/c/nt2403?mt_deeplink=boom%3A%2F%2Falbum%2F31036998&mt_sub1=%23NOTAPROBLEMS&mt_sub2=album&mt_sub3=31036998&mt_fallback=https%3A%2F%2Fboom.ru%2Fapps" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
+      VK / BOOM
+    </a>
+
+    <a class="link-btn wink" href="https://music.wink.ru/release/41043528" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/></svg>
+      Wink
+    </a>
+
+    <a class="link-btn mts" href="https://music.mts.ru/album/37996577" target="_blank">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+      МТС Музыка
+    </a>
+
+    <a class="link-btn sber" href="https://zvuk.com/release/41043528" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
+      СберЗвук
+    </a>
+
+    <a class="link-btn tg" href="https://t.me/Shorlieee" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M9 18l11-7L9 4v5l7 2-7 2z"/></svg>
+      Telegram
+    </a>
+  </div>
+</body>
+</html>
